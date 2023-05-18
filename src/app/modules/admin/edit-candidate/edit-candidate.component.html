@@ -1,0 +1,183 @@
+<div class="md-form flex flex-column bg-white w-full">
+
+  <form [formGroup]="editCandidateForm" name="editCandidateForm" class="flex flex-column ">
+
+    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5">
+      <div class="m-2">
+        <mat-form-field appearance="outline">
+          <mat-label>First Name</mat-label>
+          <input matInput placeholder="first name" formControlName="firstName" required>
+          <!-- <mat-error *ngIf="firstName.invalid">{{getErrorMessage()}}</mat-error> -->
+        </mat-form-field>
+      </div>
+
+      <div class="m-2">
+        <mat-form-field appearance="outline">
+          <mat-label>Last Name</mat-label>
+          <input matInput placeholder="Last name" formControlName="lastName" required>
+          <!-- <mat-error *ngIf="lastName.invalid">{{getErrorMessage()}}</mat-error> -->
+        </mat-form-field>
+      </div>
+      <div class="m-2">
+        <mat-form-field appearance="outline">
+          <mat-label>Mail</mat-label>
+          <input matInput placeholder="mail" formControlName="mail" required>
+          <!-- <mat-error *ngIf="mail.invalid">{{getErrorMessage()}}</mat-error> -->
+        </mat-form-field>
+      </div>
+      <div class="m-2">
+        <mat-form-field appearance="outline">
+          <mat-label>Phone</mat-label>
+          <input matInput placeholder="phone" formControlName="phone" required>
+          <!-- <mat-error *ngIf="phone.invalid">{{getErrorMessage()}}</mat-error> -->
+        </mat-form-field>
+      </div>
+      <div class="m-2">
+        <mat-form-field appearance="outline">
+          <mat-label>Interviewer</mat-label>
+          <input matInput placeholder="interviewer" formControlName="interviewer" required>
+          <!-- <mat-error *ngIf="interviewer.invalid">{{getErrorMessage()}}</mat-error> -->
+        </mat-form-field>
+      </div>
+      <div class="ml-2 mt-2">
+        <mat-form-field appearance="outline">
+          <mat-label>Date Time</mat-label>
+          <input class="date-time" matInput type="datetime-local" placeholder="datetime" formControlName="datetime"
+            required>
+          <!-- <mat-error *ngIf="datetime.invalid">{{getErrorMessage()}}</mat-error> -->
+        </mat-form-field>
+      </div>
+
+
+
+      <div class="m-2">
+        <!-- <mat-form-field appearance="outline">
+            <mat-label>Select Reffered By</mat-label>
+            <mat-select>
+              <mat-option *ngFor="let employee of employees" [value]="employee.value">
+                {{employee.viewValue}}
+              </mat-option>
+            </mat-select>
+          </mat-form-field> -->
+        <mat-form-field appearance="outline">
+          <mat-label>Select Reffered by</mat-label>
+          <mat-select [(value)]="selected">
+            <mat-option>None</mat-option>
+            <mat-option value="option1">Jhon</mat-option>
+            <mat-option value="option2">Steve</mat-option>
+            <mat-option value="option3">Tony</mat-option>
+          </mat-select>
+        </mat-form-field>
+      </div>
+
+
+
+
+
+      <div class="m-2">
+        <mat-form-field appearance="outline">
+          <mat-label>Positon Applied</mat-label>
+          <input matInput placeholder="position" formControlName="position" required>
+          <!-- <mat-error *ngIf="position.invalid">{{getErrorMessage()}}</mat-error> -->
+        </mat-form-field>
+      </div>
+      <div class="m-2">
+        <mat-form-field appearance="outline">
+          <mat-label>Address1</mat-label>
+          <input matInput placeholder="address1" formControlName="address1" required>
+          <!-- <mat-error *ngIf="address1.invalid">{{getErrorMessage()}}</mat-error> -->
+        </mat-form-field>
+      </div>
+      <div class="m-2">
+        <mat-form-field appearance="outline">
+          <mat-label>Address2</mat-label>
+          <input matInput placeholder="address2" formControlName="address2" required>
+          <!-- <mat-error *ngIf="address2.invalid">{{getErrorMessage()}}</mat-error> -->
+        </mat-form-field>
+      </div>
+      <div class="m-2">
+        <mat-form-field appearance="outline">
+          <mat-label>City</mat-label>
+          <input matInput placeholder="city" formControlName="city" required>
+          <!-- <mat-error *ngIf="city.invalid">{{getErrorMessage()}}</mat-error> -->
+        </mat-form-field>
+      </div>
+      <div class="m-2">
+        <mat-form-field appearance="outline">
+          <mat-label>State</mat-label>
+          <input matInput placeholder="state" formControlName="state" required>
+          <!-- <mat-error *ngIf="state.invalid">{{getErrorMessage()}}</mat-error> -->
+        </mat-form-field>
+      </div>
+
+
+      <div class="m-2">
+        <mat-form-field appearance="outline">
+          <mat-label>Qualification</mat-label>
+          <input matInput placeholder="qualification" formControlName="qualification" required>
+          <!-- <mat-error *ngIf="qualification.invalid">{{getErrorMessage()}}</mat-error> -->
+        </mat-form-field>
+      </div>
+
+      <div class="m-2">
+        <mat-form-field appearance="outline">
+          <mat-label>Pincode</mat-label>
+          <input matInput placeholder="pincode" formControlName="pincode" required>
+          <!-- <mat-error *ngIf="pincode.invalid">{{getErrorMessage()}}</mat-error> -->
+        </mat-form-field>
+      </div>
+
+      <div class="m-2">
+        <mat-form-field appearance="outline">
+          <mat-label>Total Experience</mat-label>
+          <input matInput placeholder="total_experience" formControlName="total_experience" required>
+          <!-- <mat-error *ngIf="total_experience.invalid">{{getErrorMessage()}}</mat-error> -->
+        </mat-form-field>
+      </div>
+      <div class="m-2">
+        <mat-form-field appearance="outline">
+          <mat-label>Relevant Experience</mat-label>
+          <input matInput placeholder="rel_experience" formControlName="rel_experience" required>
+          <!-- <mat-error *ngIf="rel_experience.invalid">{{getErrorMessage()}}</mat-error> -->
+        </mat-form-field>
+      </div>
+      <div class="grow m-2 left">
+        <mat-form-field appearance="outline">
+          <mat-label class="matlabel">Interview Round</mat-label>
+          <input matInput placeholder="interviewRound" formControlName="interviewRound" required>
+          <!-- <mat-error *ngIf="firstName.invalid">{{getErrorMessage()}}</mat-error> -->
+        </mat-form-field>
+      </div>
+      <div class="grow m-2 left">
+        <mat-form-field appearance="outline">
+          <mat-label class="matlabel">Interview Mode</mat-label>
+          <input matInput placeholder="interviewMode" formControlName="interviewMode" required>
+          <!-- <mat-error *ngIf="firstName.invalid">{{getErrorMessage()}}</mat-error> -->
+        </mat-form-field>
+      </div>
+      <div class="m-2">
+        <mat-form-field appearance="outline">
+          <mat-label class="matlabel">Select Technologies</mat-label>
+          <mat-select name="selectedTechs" formControlName="selectedTechs" multiple required>
+            <mat-option *ngFor="let option of options" [value]="option">
+              {{ option }}
+            </mat-option>
+          </mat-select>
+          <!-- <mat-error *ngIf="candidateForm.controls.selectedTechs.errors?.required">Please select at least one technology</mat-error> -->
+
+        </mat-form-field>
+      </div>
+
+    </div>
+
+    <div class="text-center">
+      <!-- <div>
+        <button type="button" onclick="history.go(-1)"
+        class="back-btn text-gray-900 hover:text-white border border-gray-800 hover:bg-gray-900 focus:ring-4 focus:outline-none focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center m-2 dark:border-gray-600 dark:text-gray-400 dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-800">Back
+      </button>
+      </div> -->
+      <button mat-button class="back-btn m-3" onclick="history.go(-1)">Back</button>
+      <button mat-button type="submit" class="submit-button m-3" (click)="closeDialog()">Submit</button>
+    </div>
+  </form>
+</div>

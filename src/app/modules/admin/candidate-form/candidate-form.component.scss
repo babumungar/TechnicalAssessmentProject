@@ -1,0 +1,43 @@
+
+
+.example-container mat-form-field + mat-form-field {
+  margin-left: 8px;
+}
+.submit-button {
+  background-color: green;
+  color: white;
+  padding:10px;
+  border-radius: 10px;
+}
+.mat-form-field {
+  border-color: #111;
+}
+.my-input {
+  border-color: darkgrey;
+}
+.date-time{
+  padding: 0px;
+  
+}
+.matlabel {
+  color:#000000;
+}
+.matSelect {
+  color: chartreuse;
+  font-style: italic;
+
+}
+.custom-placeholder ::placeholder {
+  color: red; /* Set the desired color for the placeholder text */
+}
+.back-btn{
+
+  background-color: black;
+  color: white;
+  padding:10px;
+  border-radius: 10px;
+  padding-left:20px;
+  padding-right:20px;
+
+
+}

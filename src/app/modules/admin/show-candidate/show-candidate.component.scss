@@ -1,0 +1,134 @@
+.column-2a {
+  overflow-y: scroll;
+  float: left;
+  width: 95%;
+  padding: 40px;
+  padding-left: 70px;
+  padding-right: 70px;
+  padding-bottom: 60px;
+  height: 480px;
+  margin: 30px;
+  margin-right: 30px;
+  margin-bottom: 40px;
+  background-color: white;
+}
+
+
+
+.table-style {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.table-header-style th {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.table-style td,
+.table-style th {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.table-style th {
+  background-color: burlywood;
+  font-weight: bold;
+}
+.row {
+  display: flex;
+  flex-direction: row;
+}
+.rating {
+  position: relative;
+}
+
+.rating::after {
+  content: "\2605"; /* Unicode character for a solid star */
+  font-size: 18px;
+  color: #ffc107;
+  position: absolute;
+  top: -3px;
+  left: 5px;
+}
+
+li span {
+  display: inline-block;
+  position: relative;
+}
+
+li span::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: url("https://cdn-icons-png.flaticon.com/128/477/477406.png") repeat-x left center; /* Replace with your own star icon */
+}
+
+li span::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: url("https://cdn-icons-png.flaticon.com/128/477/477406.png") repeat-x left center; /* Replace with your own star icon */
+  z-index: 1;
+  overflow: hidden;
+}
+
+li span:nth-child(1)::before {
+  width: 20%;
+}
+
+li span:nth-child(1)::after {
+  width: calc(20% * var(--rating));
+}
+
+li span:nth-child(2)::before {
+  width: 40%;
+}
+
+li span:nth-child(2)::after {
+  width: calc(20% * var(--rating) - 20%);
+}
+
+li span:nth-child(3)::before {
+  width: 60%;
+}
+
+li span:nth-child(3)::after {
+  width: calc(20% * var(--rating) - 40%);
+}
+
+li span:nth-child(4)::before {
+  width: 80%;
+}
+
+li span:nth-child(4)::after {
+  width: calc(20% * var(--rating) - 60%);
+}
+
+li span:nth-child(5)::before {
+  width: 100%;
+}
+
+li span:nth-child(5)::after {
+  width: calc(20% * var(--rating) - 80%);
+}
+
+.back-btn{
+
+  position:absolute;
+  background-color:transparent;
+  color: white;
+  padding:5px;
+  border-radius: 10px;
+ 
+}
+

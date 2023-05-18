@@ -1,0 +1,117 @@
+<button type="button" onclick="history.go(-1)"
+  class="p-200 back-btn text-gray-900 hover:text-white border border-gray-800 hover:bg-gray-900 focus:ring-4 focus:outline-none focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center m-2 dark:border-gray-600 dark:text-gray-400 dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-800">Back
+</button>
+
+<div class="flex flex-row" >
+
+  <div class="flex flex-row mt-7 " style="width: 50%;">
+    <div class="column-2a">
+      <h2 class="text-center mb-3 bold italic" style="color:black;font-size:20px;">CandidateDetails</h2>
+      <table class="table-style">
+        <tr>
+          <td style="background-color:lightslategray;color:white;">First Name</td>
+          <td>Steve</td>
+        </tr>
+        <tr>
+          <td style="background-color:lightslategray;color:white;">Last Name</td>
+          <td>Rogers</td>
+        </tr>
+        <tr>
+          <td style="background-color:lightslategray;color:white;">Email</td>
+          <td>steve@gmail.com</td>
+        </tr>
+        <tr>
+          <td style="background-color:lightslategray;color:white;">Phone</td>
+          <td>789456123</td>
+        </tr>
+        <tr>
+          <td style="background-color:lightslategray;color:white;">Address 1</td>
+          <td>4, Rajiv Gandhi Salai, Taramani, Chennai, Tamil Nadu 600 113, India</td>
+        </tr>
+        <tr>
+          <td style="background-color:lightslategray;color:white;">Address 2</td>
+          <td>4, Rajiv Gandhi Salai, Taramani, Chennai, Tamil Nadu 600 113, India</td>
+        </tr>
+        <tr>
+          <td style="background-color:lightslategray;color:white;">City</td>
+          <td>Chennai</td>
+        </tr>
+        <tr>
+          <td style="background-color:lightslategray;color:white;">State</td>
+          <td>Tamil Nadu</td>
+        </tr>
+        <tr>
+          <td style="background-color:lightslategray;color:white;">Pincode</td>
+          <td>600 113</td>
+        </tr>
+        <tr>
+          <td style="background-color:lightslategray;color:white;">Position</td>
+          <td>Developer</td>
+        </tr>
+        <tr>
+          <td style="background-color:lightslategray;color:white;">Qualification</td>
+          <td>B.Tech</td>
+        </tr>
+        <tr>
+          <td style="background-color:lightslategray;color:white;">Total Experience</td>
+          <td>3 years</td>
+        </tr>
+        <tr>
+          <td style="background-color:lightslategray;color:white;">Relevant Experience</td>
+          <td>2 years</td>
+        </tr>
+        <tr>
+          <td style="background-color:lightslategray;color:white;">Referred By</td>
+          <td>Tony</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+  <div class="flex flex-row mt-7 " style="width: 50%;">
+
+  <div class="column-2a">
+    <h2 class="text-center mb-3 bold italic" style="color:black;font-size:20px;">AssessmentDetails</h2>
+    <table class="table-style" >
+      <tr>
+        <td  style="background-color:lightslategray;color:white;">Round</td>
+        <td>Technical</td>
+      </tr>
+      <tr>
+        <td  style="background-color:lightslategray;color:white;">Date Time</td>
+        <td>21-4-23 11:57</td>
+      </tr>
+      <tr>
+        <td  style="background-color:lightslategray;color:white;">Mode</td>
+        <td>Online</td>
+      </tr>
+      <tr>
+        <td  style="background-color:lightslategray;color:white;">Duration</td>
+        <td>1.5hr</td>
+      </tr>
+      <tr>
+        <td  style="background-color:lightslategray;color:white;">Technologies & Rating</td>
+        <td>
+          <table>
+            <tr>
+              <th>Technology</th>
+              <th>Rating</th>
+            </tr>
+            <tr *ngFor="let tech of techs">
+              <td>{{ tech.name }}</td>
+              <td>{{ tech.rating }}</td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <tr>
+        <td  style="background-color:lightslategray;color:white;">Overall Rating</td>
+        <td>3</td>
+      </tr>
+      <tr>
+        <td  style="background-color:lightslategray;color:white;">Interview Status</td>
+        <td>onhold</td>
+      </tr>
+    </table>
+  </div>
+  </div>
+</div>
