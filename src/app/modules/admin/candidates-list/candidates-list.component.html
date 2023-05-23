@@ -19,17 +19,17 @@
     <table mat-table [dataSource]="dataSource" class="mat-elevation-z8 demo-table">
 
       <!-- Position Column -->
-      <ng-container class="table-row"  matColumnDef="id">
-        <th mat-header-cell *matHeaderCellDef style="background-color: gray; color:white">No.</th>
+      <ng-container   matColumnDef="id">
+        <th mat-header-cell *matHeaderCellDef style="background-color: gray; color:white; ">No.</th>
         <td mat-cell *matCellDef="let element">{{element.id}}</td>
       </ng-container>
       <ng-container matColumnDef="first_name">
-        <th mat-header-cell *matHeaderCellDef style="background-color: gray; color:white">First Name</th>
+        <th mat-header-cell *matHeaderCellDef style="background-color: gray; color:white; ">First Name</th>
         <td mat-cell *matCellDef="let element">{{element.first_name}}</td>
       </ng-container>
 
       <ng-container matColumnDef="last_name">
-        <th mat-header-cell *matHeaderCellDef style="background-color: gray; color:white">Last Name</th>
+        <th mat-header-cell *matHeaderCellDef style="background-color: gray; color:white; ">Last Name</th>
         <td mat-cell *matCellDef="let element">{{element.last_name}}</td>
       </ng-container>
 
@@ -41,33 +41,33 @@
 
       <!-- Mail Column -->
       <ng-container matColumnDef="mail">
-        <th mat-header-cell *matHeaderCellDef style="background-color: gray; color:white; padding-left:28px;">Mail</th>
+        <th mat-header-cell *matHeaderCellDef style="background-color: gray; color:white;  ">Mail</th>
         <td mat-cell *matCellDef="let element">{{element.mail}}</td>
       </ng-container>
 
       <ng-container matColumnDef="mobile">
-        <th mat-header-cell *matHeaderCellDef style="background-color: gray; color:white; padding-left:22px;">Mobile</th>
+        <th mat-header-cell *matHeaderCellDef style="background-color: gray; color:white; ">Mobile</th>
         <td mat-cell *matCellDef="let element">{{element.mobile}}</td>
       </ng-container>
       
       <ng-container matColumnDef="interviewer" >
-        <th mat-header-cell *matHeaderCellDef style="background-color: gray; color:white">Interviewer</th>
+        <th mat-header-cell *matHeaderCellDef style="background-color: gray; color:white; ">Interviewer</th>
         <td mat-cell *matCellDef="let element" >{{element.interviewer}}</td>
       </ng-container>
 
       <ng-container matColumnDef="date">
-        <th mat-header-cell *matHeaderCellDef style="background-color: gray; color:white; padding-left:20px;">Date</th>
+        <th mat-header-cell *matHeaderCellDef style="background-color: gray; color:white; ">Date</th>
         <td mat-cell *matCellDef="let element">{{element.date}}</td>
       </ng-container>
 
       <ng-container matColumnDef="time">
-        <th mat-header-cell *matHeaderCellDef style="background-color: gray; color:white; padding-left:15px;">Time</th>
+        <th mat-header-cell *matHeaderCellDef style="background-color: gray; color:white; ">Time</th>
         <td mat-cell *matCellDef="let element">{{element.time}}</td>
       </ng-container>
 
       
       <ng-container class=" ml-3" matColumnDef="actions">
-        <th mat-header-cell *matHeaderCellDef style="background-color: gray; color:white; padding-left: 20px;">Actions</th>
+        <th mat-header-cell *matHeaderCellDef style="background-color: gray; color:white; ">Actions</th>
         <td mat-cell *matCellDef="let row">
           
             <button mat-icon-button   (click)="editCandidate()" class="pr-2">
@@ -91,7 +91,7 @@
         </td>
       </ng-container>
       <ng-container matColumnDef="interviewStatus" >
-        <th mat-header-cell *matHeaderCellDef style="background-color: gray; color:white; padding-left: 20px">Status</th>
+        <th mat-header-cell *matHeaderCellDef style="background-color: gray; color:white; ">Status</th>
         <td mat-cell *matCellDef="let element" >{{element.interviewStatus}}</td>
       </ng-container>
 
