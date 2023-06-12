@@ -73,7 +73,7 @@ export class EditCandidateComponent implements OnInit {
        refferedBy: new FormControl('steve', Validators.required),
        qualification: new FormControl('B.Tech', Validators.required),
        total_experience: new FormControl('3 years', Validators.required),
-       rel_experience: new FormControl('2 ', Validators.required),
+       rel_experience: new FormControl('2 years', Validators.required),
        selectedTechs: new FormControl(['java','mysql'], Validators.required),
        interviewRound: new FormControl('Technical', Validators.required),
        interviewMode: new FormControl('online', Validators.required),
