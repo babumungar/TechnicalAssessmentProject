@@ -39,6 +39,7 @@ export class AssessmentDetailsPageComponent implements OnInit {
     this.interviewCompleted = true;
     this.interviewService.setInterviewCompleted(true);
     alert("Form submitted successfully");
+    console.log(this.assessmentForm.value);
     this.router.navigate(['main'])
   }
   ngOnInit(): void {

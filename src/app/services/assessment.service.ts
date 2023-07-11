@@ -1,13 +1,11 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { User } from 'app/core/user/user.types';
 
 @Injectable({
   providedIn: 'root'
 })
-export class UserService {
+export class AssessmentService {
 
-  
-  private baseURL = "http://localhost:9090/user/";
+  private baseURL = "http://localhost:9090/assessment/";
   constructor(private httpClient: HttpClient) { }
 }
