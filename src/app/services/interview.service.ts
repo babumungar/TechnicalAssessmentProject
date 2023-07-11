@@ -8,11 +8,11 @@ export class InterviewService {
 
   constructor() { }
 
-  getInteviewCompleted(): boolean {
-    return this.interviewCompleted;
-  }
+  // getInteviewCompleted(): boolean {
+  //   return this.interviewCompleted;
+  // }
 
-  setInterviewCompleted(value: boolean): void {
-    this.interviewCompleted = value;
-  }
+  // setInterviewCompleted(value: boolean): void {
+  //   this.interviewCompleted = value;
+  // }
 }
