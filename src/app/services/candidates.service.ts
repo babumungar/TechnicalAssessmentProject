@@ -6,27 +6,27 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class CandidatesService {
-
+  
   private baseURL = "http://localhost:9090/candidates/";
   constructor(private httpClient: HttpClient) { }
 
-  // addCandidate(): Observable<> {
-  //   return this.http.post<>(`${this.baseURL}/create`,);
-  // }
+  addCandidate(candidate: any): Observable<any> {
+    return this.httpClient.post<any>(`${this.baseURL}/create`, candidate);
+  }
 
-  // updateCandidate(): Observable<Object> {
-  //   return this.httpClient.put();
-  // }
+  updateCandidate(candidate: any): Observable<any> {
+    return this.httpClient.put<any>(`${this.baseURL}/update`, candidate);
+  }
 
-  // getCandidatesList(id: number): Observable<Candidate[]> {
-  //   return this.httpClient.get<Candidate[]>(`${this.baseURL}/${id}`);
-  // }
+  getCandidatesList(id: number): Observable<any[]> {
+    return this.httpClient.get<any[]>(`${this.baseURL}/${id}`);
+  }
 
-  // deleteCandidate(houseId: number): Observable<any> {
-  //   return this.httpClient.delete(`${this.baseURL}/deletebyid/${houseId}`);
-  // }
+  deleteCandidate(candidateId: number): Observable<any> {
+    return this.httpClient.delete(`${this.baseURL}/deletebyid/${candidateId}`);
+  }
 
-  // getCandidateById(HouseId: number): Observable<> {
-  //   return this.httpClient.get<>(`${this.baseURL}/readbyid/${HouseId}`);
-  // }
+  getCandidateById(candidateId: number): Observable<any> {
+    return this.httpClient.get<any>(`${this.baseURL}/readbyid/${candidateId}`);
+  }
 }

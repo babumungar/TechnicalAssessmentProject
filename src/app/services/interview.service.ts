@@ -1,4 +1,6 @@
+import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import { Observable } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
@@ -6,7 +8,8 @@ import { Injectable } from '@angular/core';
 export class InterviewService {
   private interviewCompleted: boolean = false;
 
-  constructor() { }
+  private baseURL = "http://localhost:9090/interview/";
+  constructor(private httpClient: HttpClient) { }
 
   // getInteviewCompleted(): boolean {
   //   return this.interviewCompleted;
@@ -15,4 +18,8 @@ export class InterviewService {
   // setInterviewCompleted(value: boolean): void {
   //   this.interviewCompleted = value;
   // }
+  addInterviewDetails(interviewDto: any): Observable<any> {
+    const url = `${this.baseURL}/create`;
+    return this.httpClient.post<any>(url, interviewDto);
+  }
 }
